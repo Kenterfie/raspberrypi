@@ -1,0 +1,46 @@
+
+# Please make this file available to others
+# by sending it to <lirc@bartelmus.de>
+#
+# this config file was automatically generated
+# using lirc-0.9.0-pre1(default) on Thu Jan 16 00:19:02 2014
+#
+# contributed by 
+#
+# brand:                       SAMSUNGHTD5100
+# model no. of remote control: 
+# devices being controlled by this remote:
+#
+
+begin remote
+
+  name  SAMSUNGHTD5100
+  bits           16
+  flags SPACE_ENC|CONST_LENGTH
+  eps            30
+  aeps          100
+
+  header       4491  4496
+  one           562  1682
+  zero          562   558
+  ptrail        571
+  pre_data_bits   16
+  pre_data       0xC2CA
+  gap          108075
+  min_repeat      1
+#  suppress_repeat 1
+#  uncomment to suppress unwanted repeats
+  toggle_bit_mask 0x0
+
+      begin codes
+          Power                    0x807F
+          Vol+                     0xCC33
+          Vol-                     0xDC23
+          Ch+                      0xC43B
+          Ch-                      0xD42B
+          Source                   0x8877
+      end codes
+
+end remote
+
+

@@ -1,0 +1,47 @@
+
+# Please make this file available to others
+# by sending it to <lirc@bartelmus.de>
+#
+# this config file was automatically generated
+# using lirc-0.9.0-pre1(default) on Thu Jan 16 00:03:10 2014
+#
+# contributed by 
+#
+# brand:                       SAMSUNG40B650T2W
+# model no. of remote control: 
+# devices being controlled by this remote:
+#
+
+begin remote
+
+  name  SAMSUNG40B650T2W
+  bits           16
+  flags SPACE_ENC|CONST_LENGTH
+  eps            30
+  aeps          100
+
+  header       4490  4496
+  one           563  1682
+  zero          563   554
+  ptrail        571
+  pre_data_bits   16
+  pre_data       0xE0E0
+  gap          108073
+  min_repeat      2
+#  suppress_repeat 2
+#  uncomment to suppress unwanted repeats
+  toggle_bit_mask 0x0
+
+      begin codes
+          Power                    0x40BF
+          Right                    0x46B9
+          Left                     0xA659
+          Up                       0x06F9
+          Down                     0x8679
+          OK                       0x16E9
+          Back                     0x1AE5
+      end codes
+
+end remote
+
+

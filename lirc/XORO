@@ -1,0 +1,77 @@
+
+# Please make this file available to others
+# by sending it to <lirc@bartelmus.de>
+#
+# this config file was automatically generated
+# using lirc-0.9.0-pre1(default) on Thu Jan 16 00:14:53 2014
+#
+# contributed by 
+#
+# brand:                       XORO
+# model no. of remote control: 
+# devices being controlled by this remote:
+#
+
+begin remote
+
+  name  XORO
+  bits           16
+  flags SPACE_ENC|CONST_LENGTH
+  eps            30
+  aeps          100
+
+  header       8942  4445
+  one           587  1631
+  zero          587   531
+  ptrail        591
+  repeat       8955  2200
+  pre_data_bits   16
+  pre_data       0xFF
+  gap          108137
+  toggle_bit_mask 0x0
+
+      begin codes
+          Power                    0x18E7
+          OK                       0xE01F
+          1                        0x58A7
+          2                        0x8877
+          3                        0x906F
+          4                        0xD827
+          5                        0x48B7
+          6                        0x50AF
+          7                        0x38C7
+          8                        0xC837
+          9                        0xD02F
+          0                        0x28D7
+          TXT                      0x8679
+          Ch+                      0xB04F
+          Ch-                      0x7887
+          Vol+                     0x6897
+          Vol-                     0xE817
+          EPG                      0x00FF
+          USB                      0x807F
+          MENU                     0x08F7
+          EXIT                     0xF807
+          Red                      0x9867
+          Green                    0x10EF
+          Yellow                   0xC03F
+          Blue                     0xB847
+          Info                     0xA05F
+          Stop                     0x926D
+          Play                     0xA25D
+          Record                   0x827D
+          Pause                    0x32CD
+          Skip+                    0x708F
+          Skip-                    0xB24D
+          Forward                  0xBA45
+          Backward                 0xF00F
+          FAV                      0x30CF
+          Mute                     0xA857
+          Audio                    0x40BF
+          MoveUp                   0x2AD5
+          MoveDown                 0x1AE5
+      end codes
+
+end remote
+
+
